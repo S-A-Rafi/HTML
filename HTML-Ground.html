@@ -4,22 +4,25 @@
 		<title> HTML Ground </title>
 	<style>
 		p{
-		color:white;
+		color:black;
 		}
 		h2{
-		color:yellow;
+		color:rgb(25, 5, 197);
 		}
 		ul{
-		color:white;
+		color:black;
 		}
 		ol{
-		color:white;
+		color:black;
 		}
 		a{
-		color:rgb(183, 247, 89);
+		color:rgb(19, 42, 248);
 		}
 		marquee{
-			color:white;
+			color:rgb(156, 7, 214);
+		}
+		div{
+			color: black;
 		}
 		div.container {
   			width:100%;
@@ -31,11 +34,19 @@
 			padding:20px;
 			border: 2px solid rgb(192, 4, 4);
 		}
+		label{
+            width: 150px;
+            display: inline-block;
+        }
+		table{
+			border-color: rgb(5, 19, 211);
+			width: 60%;
+		}
 
 	</style>
 	</head>
-	<body style="Background-color:DarkGreen"> 
-		<marquee behavior="scroll" direction="left">HTML is the standard markup language for creating Web pages. HTML is the standard markup language for creating Web pages.
+	<body style="Background-color:rgb(245, 250, 252)"> 
+		<marquee behavior="scroll" direction="left">HTML is the standard markup language for creating Web pages. HTML is the standard markup language for creating Web pages.HTML is the standard markup language for creating Web pages.
 		</marquee>
  		<h2>What is HTML?</h2>
 		<p>
@@ -84,8 +95,8 @@
 			With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!
 		</p>
 		<a href="https://www.w3schools.com/html/html_css.asp">Learn more</a>
+		
 		<div class="container">
-
 			<div style="background-color:#FFF4A3;">
 			  <h2 style="color: rgb(141, 4, 153);">Inline CSS</h2>
 			  <p style="color: blue;">An inline CSS is used to apply a unique style to a single HTML element.</p>
@@ -103,7 +114,73 @@
 			  <p style="color: blue;">An external style sheet is used to define the style for HTML pages.</p>
 			  <p style="color: blue;">To use an external style sheet, add a link to it in the head section of each HTML page:</p>
 			</div>
-		  
-		  </div>
+			<img src="image/ll.jpg" alt="image" usemap="#pic">
+    <map name="pic">
+        <area shape="rect" coords="34,42,271,347" href="laptop.html" alt="Laptop">
+        <area shape="circle" coords="338,301,45" href="tea.html" alt="tea">
+        <area shape="poly" coords="290,171,294,250,335,251,330,170" href="mobile.html" alt="tea">
+    </map>
+	<form style="width: 600px; background-color: azure;">
+		<fieldset>
+		<legend>Trainee information</legend>
+	   <label>Name:</label> 
+		<input type="text" placeholder="enter your name"><br/><br/>
+		<label>ID:</label> 
+		<input type="number"placeholder="enter your ID No"><br/><br/>
+		<label>Subject:</label> 
+		<input type="checkbox">HTML
+		<input type="checkbox" >CSS
+		<input type="checkbox" >JAVA<br/><br/>
+		<label>Email:</label> 
+		<input type="email"placeholder="enter your e-mail"><br/><br/>
+		<label>Address:</label> 
+		<textarea placeholder="enter your address"></textarea><br/><br/>
+		<label>City:</label> 
+		<select>
+			<option>Dhaka</option>
+			<option>Chattogram</option>
+			<option>Khulna</option>
+			<option>Barisal</option>
+		</select><br/><br/>
+		<label>Gender:</label> 
+		<input type="radio" name="f">Male
+		<input type="radio" name="f">Female
+		<input type="radio" name="f">Others
+		<br/><br/>
+		<input type="submit" value="Save">
+		<input type="reset" value="reset">
+	</fieldset>
+	</form>
+	<table border="3">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Contact</th>
+            <th>Company</th>
+        </thead>
+        <tr>
+            <td>001</td>
+            <td>Sifat</td>
+            <td>Gopal</td>
+            <td>0167878</td>
+            <td>DFTvgt</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Ashik</td>
+            <td>Josore</td>
+            <td>0167877</td>
+            <td>GDUjyh</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Rasel</td>
+            <td>Borisal</td>
+            <td>0167879</td>
+            <td>KJUyht</td>
+        </tr>
+        
+    </table>
 	</body>
 </html>

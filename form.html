@@ -2,41 +2,48 @@
 <html lang="en">
 <head>
     <title>html-form</title>
-  
+    <style>
+        label{
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     
-    <div>
-        <h2>Trainee information</h2>
-        <form>
-            Name:<br/>
+
+        <div style="width: 400px; background-color: azure;">
+            <fieldset>
+            <legend>Trainee information</legend>
+           <label>Name:</label> 
             <input type="text" placeholder="enter your name"><br/><br/>
-            ID:<br/>
+            <label>ID:</label> 
             <input type="number"placeholder="enter your ID No"><br/><br/>
-            Subject:<br/>
-            <input type="checkbox">Male
-            <input type="checkbox" >Female
-            <input type="checkbox" >Others<br/><br/>
-            Email:<br/>
+            <label>Subject:</label> 
+            <input type="checkbox">HTML
+            <input type="checkbox" >CSS
+            <input type="checkbox" >JAVA<br/><br/>
+            <label>Email:</label> 
             <input type="email"placeholder="enter your e-mail"><br/><br/>
-           Address:<br/>
+            <label>Address:</label> 
             <textarea placeholder="enter your address"></textarea><br/><br/>
-            City:<br/>
+            <label>City:</label> 
             <select>
                 <option>Dhaka</option>
                 <option>Chattogram</option>
                 <option>Khulna</option>
                 <option>Barisal</option>
             </select><br/><br/>
-            Gender:
+            <label>Gender:</label> 
             <input type="radio" name="f">Male
             <input type="radio" name="f">Female
             <input type="radio" name="f">Others
             <br/><br/>
             <input type="submit" value="Save">
             <input type="reset" value="reset">
-        </form>
-    </div>
+        </fieldset>
+        </div>
+
    
 </body>
 </html>
