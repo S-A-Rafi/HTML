@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
     <Style>
-        table{
-            border-color: blue;
+        table, th, td{
+            border: 1px solid black;
             background-color: rgb(247, 245, 234);
+            border-collapse: collapse;
         }
     </Style>
 </head>
 <body>
-    <table border="3">
+    <table>
         <thead>
             <th>ID</th>
             <th>Name</th>
             <th>City</th>
-            <th>Contact</th>
-            <th>Company</th>
+            <th colspan="2">Contact</th>
+            
         </thead>
         <tr>
-            <td>001</td>
+            <td rowspan="2">001</td>
             <td>Sifat</td>
             <td>Gopal</td>
-            <td>0167878</td>
-            <td>DFTvgt</td>
+            <td colspan="2">0167878</td>
+           
         </tr>
         <tr>
-            <td>002</td>
+            
             <td>Ashik</td>
             <td>Josore</td>
             <td>0167877</td>

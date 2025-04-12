@@ -18,8 +18,13 @@
 		a{
 		color:rgb(19, 42, 248);
 		}
-		marquee{
-			color:rgb(156, 7, 214);
+		.mar{
+			color:rgb(65, 2, 90);
+			font-size: xx-large;
+		}
+		.mer{
+			color:rgb(65, 2, 90);
+			font-size: small;
 		}
 		div{
 			color: black;
@@ -38,15 +43,21 @@
             width: 150px;
             display: inline-block;
         }
-		table{
-			border-color: rgb(5, 19, 211);
+		legend{
+			text-align: center;
+			font-size: large;
+		}
+		table, th, td {
 			width: 60%;
+			border: 1px solid black;
+			border-collapse: collapse;
 		}
 
 	</style>
 	</head>
 	<body style="Background-color:rgb(245, 250, 252)"> 
-		<marquee behavior="scroll" direction="left">HTML is the standard markup language for creating Web pages. HTML is the standard markup language for creating Web pages.HTML is the standard markup language for creating Web pages.
+		<marquee class="mar" behavior="scroll" direction="left">
+			HTML is the <span style="color: red;">standard</span> <span style="color: rgb(4, 124, 20);">markup</span>  language for <span style="color: rgb(255, 217, 0);">markup</span> creating Web pages. <span style="color: red;">HTML is the standard markup</span>  language for creating <span style="color: rgb(25, 161, 7);">Web pages.HTML is the standard markup</span> language for creating Web pages. TML is the standard markup language for creating Web pages.
 		</marquee>
  		<h2>What is HTML?</h2>
 		<p>
@@ -63,14 +74,18 @@
 		<img src="image/Tag.jpg" width="100p" hight="100p">
 		<img src="image/HTML1.jpg" width="150p" hight="250p">
 		<a href="https://www.w3schools.com/html/default.asp">Learn more</a>
+		<br>
+		<marquee class="mer" behavior="scroll" direction="right">
+			HTML is the <span style="color: red;">standard</span> <span style="color: rgb(4, 124, 20);">markup</span>  language for <span style="color: rgb(255, 217, 0);">markup</span> creating Web pages. <span style="color: red;">HTML is the standard markup</span>  language for creating <span style="color: rgb(25, 161, 7);">Web pages.HTML is the standard markup</span> language for creating Web pages. TML is the standard markup language for creating Web pages.
+		</marquee>
 		<h2>HTML Elements:</h2>
 		<p>
-		<p style="Background-color:red; color:White">There are two types of element,</p>
+		<p style="Background-color:rgb(142, 229, 245); color:rgb(110, 2, 20)">There are two types of element,</p>
 		<ol>
 		<li>Tag Element</li>
 		<li>Content Element</li>
 		</ol>
-		<p style="Background-color:red; color:White">There are three types of Tag Element,</p>
+		<p style="Background-color:rgb(128, 224, 248); color:rgb(97, 3, 3)">There are three types of Tag Element,</p>
 		<ol>
 		<li>Block-level Element</li>
 		<li>Inline Element</li>
@@ -95,7 +110,7 @@
 			With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!
 		</p>
 		<a href="https://www.w3schools.com/html/html_css.asp">Learn more</a>
-		
+		<!--div Section-->
 		<div class="container">
 			<div style="background-color:#FFF4A3;">
 			  <h2 style="color: rgb(141, 4, 153);">Inline CSS</h2>
@@ -114,15 +129,20 @@
 			  <p style="color: blue;">An external style sheet is used to define the style for HTML pages.</p>
 			  <p style="color: blue;">To use an external style sheet, add a link to it in the head section of each HTML page:</p>
 			</div>
+		</div>
+		<br><br>
+		<!--image maping section-->
 			<img src="image/ll.jpg" alt="image" usemap="#pic">
     <map name="pic">
         <area shape="rect" coords="34,42,271,347" href="laptop.html" alt="Laptop">
         <area shape="circle" coords="338,301,45" href="tea.html" alt="tea">
         <area shape="poly" coords="290,171,294,250,335,251,330,170" href="mobile.html" alt="tea">
     </map>
+	<br><br>
+	<!--Form Section-->
 	<form style="width: 600px; background-color: azure;">
 		<fieldset>
-		<legend>Trainee information</legend>
+		<legend>Trainee information</legend><br>
 	   <label>Name:</label> 
 		<input type="text" placeholder="enter your name"><br/><br/>
 		<label>ID:</label> 
@@ -151,12 +171,13 @@
 		<input type="reset" value="reset">
 	</fieldset>
 	</form>
-	<table border="3">
+	<br><br>
+	<!--Table Section-->
+	<table >
         <thead>
             <th>ID</th>
             <th>Name</th>
-            <th>City</th>
-            <th>Contact</th>
+            <th colspan="2">Contact</th>
             <th>Company</th>
         </thead>
         <tr>
@@ -180,7 +201,7 @@
             <td>0167879</td>
             <td>KJUyht</td>
         </tr>
-        
     </table>
+
 	</body>
 </html>
