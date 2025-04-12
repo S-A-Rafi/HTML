@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+			color: black;
+		}
+		div.container {
+  			width:100%;
+  			overflow:auto;
+		}
+		div.container div {
+  			width:29%;  
+  			float:left;
+			padding:20px;
+			border: 2px solid rgb(12, 1, 1);
+		}
+        h1{
+            color: rgb(246, 255, 0);
+            text-align: center;
+        }
+        h2{
+            color: white;
+            text-align: center;
+        }
+        h3{
+            color: rgb(177, 228, 75);
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            color: antiquewhite;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <h1>Learn Bootstrap</h1>
+    <h3>
+        Bootstrap is the world's most famous free CSS framework. <br>
+        You can choose between the following versions:
+    </h3>
+    <br>
+    <div class="container">
+        <div style="background-color:rgb(150, 5, 164);">
+          <h2>B3</h2>
+          <button>Learn bootstrap-3</button>
+          <p>
+            Bootstrap 3 is the most stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes.
+          </p>
+        </div>
+        
+        <div style="background-color:#9b04b9;">
+          <h2>B4</h2>
+          <button>Learn bootstrap-4</button>
+          <p>
+            Bootstrap 4 is a newer version of Bootstrap; with new components, faster stylesheet and more responsiveness. However, Internet Explorer 9 and down is not supported.
+          </p>
+        </div>
+        
+        <div style="background-color:hsl(300, 94%, 33%);">
+          <h2>B5</h2>
+          <button>Learn bootstrap-5</button>
+         <p>
+            Bootstrap 5 is the newest version of Bootstrap; with a smooth overhaul. However, Internet Explorer 11 and down is not supported.
+         </p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-learning</title>
+    <style>
+        div{
+			color: black;
+		}
+		div.container {
+  			width:100%;
+  			overflow:auto;
+		}
+		div.container div {
+  			width: 29%;  
+  			float:left;
+			padding:20px;
+			border: 2px solid rgb(192, 4, 4);
+		}
+        h1{
+            text-align: center;
+            color: red;
+        }
+        h2{
+            color: rgb(3, 3, 174);
+        }
+    </style>
+</head>
+<body>
+    <h1><span style="color: rgb(1, 118, 1);">L</span>e<span style="color: rgb(19, 7, 182);">a</span>r<span style="color: rgb(50, 2, 10);">n<samp></samp> </span><span style="color: rgb(2, 98, 2);">C</span>S<span style="color: rgb(2, 100, 2);">S</span></h1>
+    <h2>What is CSS?</h2>
+    <p>
+        CSS is the language we use to style an HTML document. <br>
+        CSS describes show HTML elements should be displayed. <br>
+        Many chapters in this tutorial end with an exercise where you can check your level of knowledge. <br>
+    </p>
+    <h2>CSS Example:</h2>
+    <img src="image/CSS-1.jpg" alt="CSS">
+    <br><br>
+    <h2>Types of CSS</h2>
+    <p>There are three types of CSS</p>
+    <div class="container">
+        <div style="background-color:#FFF4A;">
+          <h2 style="color: rgb(141, 4, 153);">Inline CSS</h2>
+          <p style="color: blue;">An inline CSS is used to apply a unique style to a single HTML element.</p>
+          <p style="color: blue;">An inline CSS uses the style attribute of an HTML element. like you want</p>
+        </div>
+        
+        <div style="background-color:#FFC0C7;">
+          <h2 style="color: rgb(141, 4, 153);">Internal CSS</h2>
+          <p style="color: blue;">An internal CSS is used to define a style for a single HTML page.</p>
+          <p style="color: blue;">An internal CSS is defined in the head section of an HTML page, within a style element</p>
+        </div>
+        
+        <div style="background-color:hsl(194, 80%, 86%);">
+          <h2 style="color: rgb(141, 4, 153);">External CSS</h2>
+          <p style="color: blue;">An external style sheet is used to define the style for HTML pages.</p>
+          <p style="color: blue;">To use an external style sheet, add a link to it in the head section of each HTML page:</p>
+        </div>
+</body>
+</html>
