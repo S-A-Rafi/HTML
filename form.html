@@ -1,48 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html-form</title>
     <style>
-        label{
+        .label{
             width: 150px;
             display: inline-block;
+            padding-left: 100px;
+            color: whites;
         }
+       
+        
+        button{
+            background-color: rgb(3, 3, 89);
+            color: white;
+            transition: background-color 0.15s;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: rgba(138, 138, 249, 0.45);
+            color: black;
+        }
+        button:active{
+            box-shadow: 6px 6px 0.15 rgb(81, 80, 80);
+        }
+        p{
+            width: 150px;
+            float: left;
+            padding-left: 100px;
+        }
+
     </style>
 </head>
-<body>
+<body style="background-image: url(image/B-3.jpg);">
     
+<form style="margin-left: 195px; margin-top: 257px; color: white;">
+        <div style="width: 650px; background-color: none">
 
-        <div style="width: 400px; background-color: azure;">
-            <fieldset>
-            <legend>Trainee information</legend>
-           <label>Name:</label> 
-            <input type="text" placeholder="enter your name"><br/><br/>
-            <label>ID:</label> 
-            <input type="number"placeholder="enter your ID No"><br/><br/>
-            <label>Subject:</label> 
+           <label class="label">Name:</label> 
+            <input type="text" placeholder="enter your name" style="width: 300px;"><br/><br/>
+            
+            <label class="label">Interest:</label> 
             <input type="checkbox">HTML
             <input type="checkbox" >CSS
+            <input type="checkbox" >C++
+            <input type="checkbox" >Python
             <input type="checkbox" >JAVA<br/><br/>
-            <label>Email:</label> 
-            <input type="email"placeholder="enter your e-mail"><br/><br/>
-            <label>Address:</label> 
-            <textarea placeholder="enter your address"></textarea><br/><br/>
-            <label>City:</label> 
+            <label class="label">Email:</label> 
+            <input type="email" placeholder="enter your e-mail" style="width: 300px;"><br/><br/>
+            <label class="label">Address:</label> 
+            <textarea placeholder="enter your address" style="width: 300px; height: 18px;"></textarea><br/><br/>
+            <label class="label">City:</label> 
             <select>
                 <option>Dhaka</option>
                 <option>Chattogram</option>
                 <option>Khulna</option>
                 <option>Barisal</option>
-            </select><br/><br/>
-            <label>Gender:</label> 
-            <input type="radio" name="f">Male
-            <input type="radio" name="f">Female
-            <input type="radio" name="f">Others
+            </select><br/>
+            <p>Gender:</p><br> 
+            <input type="radio" name="f" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="f" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="f" id="Others">
+            <label for="Others">Others</label>
             <br/><br/>
-            <input type="submit" value="Save">
-            <input type="reset" value="reset">
-        </fieldset>
+            <button type="submit" style="margin-left:0px; border-radius: 15px; height: 35px;">Subbmit</button>
+            <button type="reset" style="margin-left: 110px; border-radius: 15px; height:35px;">Reset</button>
+    
         </div>
+       
+    </form>
 
    
 </body>

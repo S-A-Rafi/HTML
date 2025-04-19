@@ -14,13 +14,14 @@
 		div.container {
   			
   			overflow:auto;
-            
-		}
-		div.container div {
-  			width:29%;  
-  			float:left;
-        margin-left: 30px;
-		}
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+
+  			
+	
     div.container div:hover{
       opacity: 0.8;
     }
@@ -38,14 +39,19 @@
             color: antiquewhite;
         }
         button{
-            display: flex;
+            display: gid;
+            grid-template-columns: 3;
+            grid-template-rows: 5;
+            column-gap: 60px;
+            row-gap: 50px;
             justify-content: center;
             align-items: center; 
-            margin-left: 130px;
+            display: inline-block;
             border-radius: 10px;
             border: none;
-            width: 100px;
+            width: 110px;
             cursor: pointer;
+            position: relative;
         }
         button:hover{
           background-color: rgb(248, 115, 228);
